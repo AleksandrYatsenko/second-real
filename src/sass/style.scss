@@ -40,5 +40,12 @@ body {
   
 }
 
+.line {
+  width: 169px;
+  height: 4px;
+  background: linear-gradient(90deg, #FFAC12 0%, #000000 94.96%);
+  border-radius: 2px;
+}
+
 @import 'blocks/promo';
 @import 'blocks/hands';
