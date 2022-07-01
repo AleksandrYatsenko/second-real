@@ -1,12 +1,15 @@
 .promo {
   width: 100%;
+  max-width: 1440px;
   min-height: 850px;
+  margin: 0 auto;
   padding-top: 32px;
   background: linear-gradient(198.73deg, rgba(0, 0, 0, 0.0001) 15.31%, rgba(0, 0, 0, 0.837986) 67.37%),          url('../img/promo.jpg') center/cover no-repeat;
   .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     &__logo {
       width: 128px;
       height: 34px;
@@ -19,8 +22,9 @@
       }
     }
     &__nav {
+      width: 100%;
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-end;
       align-items: center;
     }
     &__list {
