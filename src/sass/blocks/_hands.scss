@@ -1,0 +1,28 @@
+.hands {
+  
+  width: 100%;
+  min-height: 740px;
+  padding: 150px 0 104px 0;
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+  }
+  &__img,
+  &__box {
+    width: 50%;
+    flex-grow: 1;
+  }
+  &__img {
+    position: relative;
+    img {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 16px;
+      border-radius: 0 57px 0 0;
+      filter: drop-shadow(0px 62px 54px rgba(0, 0, 0, 0.3));
+      z-index: 2;
+    }
+  }
+}
