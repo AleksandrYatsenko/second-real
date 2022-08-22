@@ -1,12 +1,15 @@
 @media (max-width: 1399px) {
   
   .hands {
-    min-height: 700px;
-    padding-top: 130px;
+    min-height: 560px;
+    padding-top: 80px;
     &__img {
       img {
-        width: 130%;
+        top: 15%;
       }
+    }
+    &__box {
+      padding-top: 10%;
     }
     .title {
       font-size: 42px;
@@ -14,7 +17,7 @@
   }
 }  
 
-/* -------------------------- 768 - 1023 */
+/* -------------------------- 992 - 1199 */
 @media (max-width: 1199px) {
   .promo {
     min-height: 500px;
@@ -55,31 +58,61 @@
   }
 
   .hands {
-    min-height: 440px;
-    padding: 40px 0 30px;
+    min-height: 470px;
+    padding: 45px 0 40px;
     
     &__img {
       img {
-        width: 110%;
+        top: 10%;
       }
     }
     &__box {
-      padding: 7% 3% 0;
+      padding-top: 8%;
     }
-    &__descr {
-      font-size: 16px;
-    }
+    // &__descr {
+    //   font-size: 18px;
+    // }
     &__link {
       width: 195px;
       height: 55px;
       font-size: 16px;
     }
     .title {
-      font-size: 32px;
+      font-size: 36px;
     }
 
   }
 }
+
+/* ----------------------------- 768 - 991*/
+@media (max-width: 991px) {
+  .hands {
+    min-height: 420px;
+    padding: 40px 0;
+    // &__content {
+    //   position: relative;
+    // }
+    &__img {
+      img {
+        position: static;
+        width: 100%;
+        // top: unset;
+        // bottom: 0;
+      }
+    }
+    &__box {
+      padding-top: 3%;
+      padding-bottom: 3%;
+    }
+    &__descr {
+      font-size: 16px;
+    }
+    .title {
+      font-size: 32px;
+    }
+  }
+}
+
 
 /* ----------------------------- 576 - 767 */
 @media (max-width: 767px) {
