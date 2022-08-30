@@ -11,9 +11,10 @@
     &__box {
       padding-top: 10%;
     }
-    .title {
-      font-size: 42px;
-    }
+    
+  }
+  .title {
+    font-size: 42px;
   }
 }  
 
@@ -69,18 +70,41 @@
     &__box {
       padding-top: 8%;
     }
-    // &__descr {
-    //   font-size: 18px;
-    // }
     &__link {
       width: 195px;
       height: 55px;
       font-size: 16px;
     }
-    .title {
-      font-size: 36px;
+
+  }
+
+  .selection {
+    padding: 150px 0;
+    &__filter {
+      margin-top: 40px;
+    }
+    
+    &__item {
+      padding: 30px;
     }
 
+    &__variants {
+      margin-top: 70px;
+    }
+
+    .card {
+      &__title {
+        padding: 22px;
+        font-size: 22px;
+      }
+      &__cell {
+        padding: 18px 30px;
+      }
+    }
+  }
+
+  .title {
+    font-size: 36px;
   }
 }
 
@@ -89,15 +113,10 @@
   .hands {
     min-height: 420px;
     padding: 40px 0;
-    // &__content {
-    //   position: relative;
-    // }
     &__img {
       img {
         position: static;
         width: 100%;
-        // top: unset;
-        // bottom: 0;
       }
     }
     &__box {
