@@ -135,14 +135,19 @@
     padding: 60px 0;
     &__filter {
       margin-top: 30px;
+      border-radius: 20px;
     }
     &__item {
       padding: 25px 20px 25px 25px;
+    }
+    &__sublist {
+      top: 75%;
     }
     &__variants {
       margin-top: 60px;
     }
     .card {
+      border-radius: 20px;
       &__title {
         padding: 15px;
         font-size: 18px;
@@ -261,6 +266,30 @@
     &__descr {
       max-width: 100%;
     }
+  }
+
+  .selection {
+    &__filter {
+      border-radius: 15px;
+    }
+    &__item {
+      padding: 20px 6px 20px 18px;
+      font-size: 14px;
+      svg {
+        margin-left: 5px;
+      }
+    }
+    &__subitem {
+      padding: 10px 20px;
+    }
+    &__variants {
+      margin-top: 50px;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .title {
+    font-size: 30px;
   }
 }
 
