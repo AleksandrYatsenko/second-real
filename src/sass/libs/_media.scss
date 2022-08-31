@@ -126,8 +126,37 @@
     &__descr {
       font-size: 16px;
     }
-    .title {
-      font-size: 32px;
+  }
+  .title {
+    font-size: 32px;
+  }
+
+  .selection {
+    padding: 60px 0;
+    &__filter {
+      margin-top: 30px;
+    }
+    &__item {
+      padding: 25px 20px 25px 25px;
+    }
+    &__variants {
+      margin-top: 60px;
+    }
+    .card {
+      &__title {
+        padding: 15px;
+        font-size: 18px;
+        text-align: center;
+      }
+      &__footer {
+        justify-content: space-evenly;
+      }
+      &__cell {
+        padding: 14px;
+      }
+      &__icon {
+        margin-right: 5px;
+      }
     }
   }
 }
