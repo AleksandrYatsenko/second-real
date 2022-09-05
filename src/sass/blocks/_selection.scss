@@ -49,11 +49,16 @@
     background-color: #fff;
     border-radius: 0 0 15px 15px;
     transition: .2s ease-in;
+    z-index: 2;
   }
 
   &__subitem {
     padding: 10px 10px 10px 40px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     cursor: pointer;
+    z-index: 2;
   }
       
   &__variants {

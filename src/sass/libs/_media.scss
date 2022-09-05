@@ -325,10 +325,28 @@
     }
     &__descr {
       max-width: 100%;
+    } 
+  }
+
+  .selection {
+    &__filter {
+      flex-direction: column;
     }
-    .title {
-      margin-top: 14px;
-      font-size: 28px;
+    &__item {
+      &:not(:last-child) {
+        border-right: none;
+      }
     }
+    &__variants {
+      grid-template-columns: 1fr;
+    }
+    .card {
+      margin: 0 auto;
+    }
+  }
+
+  .title {
+    margin-top: 14px;
+    font-size: 28px;
   }
 }
