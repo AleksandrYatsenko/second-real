@@ -13,6 +13,15 @@
     }
     
   }
+
+  .hands-sd {
+    min-height: 560px;
+    padding-top: 80px;
+    &__box {
+      padding-top: 10%;
+    }
+  }
+
   .title {
     font-size: 42px;
   }
