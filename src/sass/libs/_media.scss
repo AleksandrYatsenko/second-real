@@ -14,11 +14,20 @@
     
   }
 
+  .selection {
+    padding-bottom: 270px;
+  }
+
   .hands-sd {
     min-height: 560px;
-    padding-top: 80px;
+    padding-top: 5%;
     &__box {
-      padding-top: 10%;
+      padding-top: 5%;
+    }
+    &__img {
+      img {
+        bottom: 21%
+      }
     }
   }
 
@@ -70,7 +79,6 @@
   .hands {
     min-height: 470px;
     padding: 45px 0 40px;
-    
     &__img {
       img {
         top: 10%;
@@ -84,7 +92,6 @@
       height: 55px;
       font-size: 16px;
     }
-
   }
 
   .selection {
@@ -109,6 +116,21 @@
       &__cell {
         padding: 18px 30px;
       }
+    }
+  }
+
+  .hands-sd {
+    min-height: 470px;
+    padding-top: 7%;
+    &__img {
+      img {
+        bottom: 18.5%;
+      }
+    }
+    &__link {
+      width: 195px;
+      height: 55px;
+      font-size: 16px;
     }
   }
 

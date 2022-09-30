@@ -1,11 +1,11 @@
 .hands-sd {
+  position: relative;
   width: 100%;
   min-height: 636px;
   margin: 0 auto;
-  padding: 112px 0 150px 0;
+  padding: 7.9% 0 10.54% 0;
   background-color: #fff;
   &__content {
-    position: relative;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -19,13 +19,10 @@
     img {
       display: block;
       position: absolute;
-      // top: -22%;
-      bottom: 0;
-      // left: -185px;
+      bottom: 21.5%;
       left: 51%;
-      width: 100%;
+      width: 50%;
       max-width: 704px;
-      // height: 657px;
       border-radius: 57px 0 0 0;
       filter: drop-shadow(0px 62px 54px rgba(0, 0, 0, 0.3));
       z-index: 2;
@@ -33,7 +30,8 @@
   }
   &__box {
     max-width: 563px;
-    padding-right: 60px;
+    // padding-right: 60px;
+    padding: 116px 25px 0;
   }
   &__descr {
     margin-top: 20px;
