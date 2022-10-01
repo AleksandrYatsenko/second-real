@@ -38,6 +38,17 @@
   .title {
     font-size: 42px;
   }
+
+  .reviews {
+    padding: 8% 0;
+    &__descr {
+      font-size: 20px;
+    }
+    &__person {
+      margin-top: 16%;
+      padding: 10%;
+    }
+  }
 }  
 
 /* -------------------------- 992 - 1199 */
@@ -128,7 +139,9 @@
     padding-top: 7%;
     &__img {
       img {
+        right: 0;
         bottom: 18.5%;
+        left: unset;
       }
     }
     &__link {
@@ -148,6 +161,12 @@
 
   .title {
     font-size: 36px;
+  }
+
+  .reviews {
+    &__tab {
+      width: 31%;
+    }
   }
 }
 
@@ -239,6 +258,17 @@
       font-size: 16px;
     }
     
+  }
+  .reviews {
+    padding: 6% 0;
+    &__descr {
+      font-size: 16px;
+    }
+    &__person {
+      margin-top: 15%;
+      padding: 8%;
+      column-gap: 12px;
+    }
   }
 }
 
@@ -383,6 +413,18 @@
   .title {
     font-size: 30px;
   }
+
+  .reviews {
+    &__tab {
+      width: 50%;
+      &:last-child {
+        display: none;
+      }
+    }
+    &__descr {
+      margin-top: 30px;
+    }
+  }
 }
 
 /* ------------------------------ 320 - 575*/
@@ -453,5 +495,15 @@
   .title {
     margin-top: 14px;
     font-size: 28px;
+  }
+
+  .reviews {
+    &__tab {
+      width: 100%;
+      margin: 0 auto;
+      &:not(:first-child) {
+        display: none;
+      }
+    }
   }
 }
