@@ -7,3 +7,44 @@ window.addEventListener('scroll', () => {
     elemUp.classList.add('hidden');
   }
 });
+
+//  -------------- burger -----------------
+const header = document.querySelector('.header'), 
+      burger = header.querySelector('.header__burger'),
+      burgerSpans = burger.querySelectorAll('span'),
+      navBlock = header.querySelector('.header__nav'),
+      navItems = navBlock.querySelectorAll('.header__link'),
+      headerButton = header.querySelector('.button');
+
+function openBurger() {
+    burger.classList.add('header__burger_active');
+    navBlock.classList.add('header__nav_active');
+    undlayForNav.style.display = 'block';
+}
+function closeBurger() {
+  navBlock.classList.remove('header__nav_active');
+  burger.classList.remove('header__burger_active');
+  undlayForNav.style.display = 'none';
+}
+// burger.addEventListener('click', openBurger);
+
+document.addEventListener('click', (e) => {
+  const target = e.target;
+  if (target.classList.contains('header__burger_active') || target == headerButton) {
+    closeBurger();
+  } else if(target == burger) {
+    openBurger();
+  }
+});
+
+burgerSpans.forEach(item => {
+  item.addEventListener('click', openBurger);
+});
+// burgerSpans.forEach(item => {
+//   item.addEventListener('click', closeBurger);
+// })
+
+navItems.forEach(item => {
+  item.addEventListener('click', closeBurger);
+});
+
