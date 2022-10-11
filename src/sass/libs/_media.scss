@@ -321,33 +321,36 @@
         flex-direction: column;
         justify-content: start;
         position: absolute;
+        width: 80vw;
+        margin: 0;
+        padding: 80px 20px 30px; 
         left: 0;
-        top: -900%;
-        row-gap: 50px;
-        transition: all 0.2s;
+        top: -1400%;
+        row-gap: 30px;
+        background-color: rgba(0, 0, 0, 0.9);
+        z-index: 3;
+        transition: top 0.3s;
         &_active {
           position: fixed;
           top: 0;
-          left: 0;
-          width: 80vw;
           height: 100vh;
-          margin: 0;
-          padding: 80px 20px 30px;
-          background-color: rgba(0, 0, 0, 0.9);
-          z-index: 3;
         }
       }
       &__list {
         flex-direction: column;
-        row-gap: 20px;
+        row-gap: 5px;
+        width: 100%;
         li {
+          width: 100%;
           &:hover {
             transform: none;
           }
         }
       }
       &__link {
-        padding: 10px 50px;
+        display: block;
+        width: 100%;
+        padding: 15px;
       }
       .button {
         margin-left: 0;
@@ -375,14 +378,14 @@
         }
         &_active {
           span:first-child {
-            transform: translateY(1px) rotate(-45deg);
+            transform: translateY(7px) rotate(-45deg);
           }
           span:nth-child(2) {
             width: 0;
           }
           span:last-child {
             margin-bottom: 0;
-            transform: translateY(-7px) rotate(45deg);
+            transform: translateY(-1px) rotate(45deg);
           }
         }
       }
@@ -518,6 +521,11 @@
 @media (max-width: 575px) {
   .promo {
     min-height: 300px;
+    .header {
+      &__burger {
+        right: 0;
+      }
+    }
     &__box {
       max-width: 100%;
       margin-top: 30px;

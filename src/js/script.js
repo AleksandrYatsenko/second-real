@@ -11,11 +11,15 @@ window.addEventListener('scroll', () => {
 //  -------------- burger -----------------
 const header = document.querySelector('.header'), 
       burger = header.querySelector('.header__burger'),
-      burgerSpans = burger.querySelectorAll('span'),
       navBlock = header.querySelector('.header__nav'),
       navItems = navBlock.querySelectorAll('.header__link'),
-      headerButton = header.querySelector('.button');
+      headerButton = header.querySelector('.button'),
+      undlayForNav = document.querySelector('.underlayerForNav');
 
+// function toggleBurger () {
+//   burger.classList.toggle('header__burger_active');
+//   navBlock.classList.toggle('header__nav_active');
+// };
 function openBurger() {
     burger.classList.add('header__burger_active');
     navBlock.classList.add('header__nav_active');
@@ -26,20 +30,18 @@ function closeBurger() {
   burger.classList.remove('header__burger_active');
   undlayForNav.style.display = 'none';
 }
-// burger.addEventListener('click', openBurger);
+burger.addEventListener('click', openBurger);
 
 document.addEventListener('click', (e) => {
   const target = e.target;
-  if (target.classList.contains('header__burger_active') || target == headerButton) {
+  if (target.classList.contains('header__burger_active') || target.classList.contains('underlayerForNav') || target == headerButton) {
     closeBurger();
-  } else if(target == burger) {
-    openBurger();
   }
 });
 
-burgerSpans.forEach(item => {
-  item.addEventListener('click', openBurger);
-});
+// burgerSpans.forEach(item => {
+//   item.addEventListener('click', toggleBurger);
+// });
 // burgerSpans.forEach(item => {
 //   item.addEventListener('click', closeBurger);
 // })
