@@ -1,5 +1,9 @@
 @import 'libs/font';
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #F5F5F5;
   font-family: 'DM Sans', sans-serif;
@@ -34,6 +38,8 @@ ul {
   margin: 0 auto;
   padding: 0 15px;
 }
+
+
 
 .button {
   width: 211px;
@@ -70,6 +76,35 @@ ul {
   height: 4px;
   background: linear-gradient(90deg, #FFAC12 0%, #000000 94.96%);
   border-radius: 2px;
+}
+
+.up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  right: 20px;
+  bottom: 20px;
+  padding: 4px;
+  background-color: #271A00;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0 0 15px 0 #fff;
+  z-index: 6;
+  text-decoration: none;
+
+  svg {
+    width: 80%;
+    height: 80%;
+    transform: rotate(-90deg);
+    color: white;
+  }
+}
+
+.hidden {
+  display: none;
 }
 
 @import 'blocks/promo';
