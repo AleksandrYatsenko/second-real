@@ -10,7 +10,7 @@ window.addEventListener('scroll', () => {
 
 //  -------------- burger -----------------
 const header = document.querySelector('.header'), 
-      burger = header.querySelector('.header__burger'),
+      burger = document.querySelector('.header__burger'),
       navBlock = header.querySelector('.header__nav'),
       navItems = navBlock.querySelectorAll('.header__link'),
       headerButton = header.querySelector('.button'),
@@ -21,21 +21,27 @@ const header = document.querySelector('.header'),
 //   navBlock.classList.toggle('header__nav_active');
 // };
 function openBurger() {
-    burger.classList.add('header__burger_active');
-    navBlock.classList.add('header__nav_active');
-    undlayForNav.style.display = 'block';
+  burger.classList.add('header__burger_active');
+  navBlock.classList.add('header__nav_active');
+  undlayForNav.style.display = 'block';
 }
 function closeBurger() {
   navBlock.classList.remove('header__nav_active');
   burger.classList.remove('header__burger_active');
   undlayForNav.style.display = 'none';
 }
-burger.addEventListener('click', openBurger);
+burger.addEventListener('click', (e) => {
+  console.log(e.target);
+  if (!burger.classList.contains('header__burger_active')) {
+    openBurger();
+  }
+});
 
-document.addEventListener('click', (e) => {
+header.addEventListener('click', (e) => {
   const target = e.target;
   if (target.classList.contains('header__burger_active') || target.classList.contains('underlayerForNav') || target == headerButton) {
     closeBurger();
+    console.log(target);
   }
 });
 

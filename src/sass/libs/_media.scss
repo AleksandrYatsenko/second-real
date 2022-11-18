@@ -320,7 +320,6 @@
         position: absolute;
         flex-direction: column;
         justify-content: start;
-        position: absolute;
         width: 80vw;
         margin: 0;
         padding: 80px 20px 30px; 
@@ -366,7 +365,7 @@
         top: 50%;
         transform: translateY(-50%);
         cursor: pointer;
-        z-index: 4;
+        z-index: 2;
         span {
           content:'';
           display: block;
