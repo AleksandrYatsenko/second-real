@@ -57,9 +57,9 @@
       color: #fff;
       text-align: center;
     }
-    &__burger {
-      display: none;
-    }
+    // &__burger {
+    //   display: none;
+    // }
     .burger_active {
       span:first-child {
         transform: translateY(1px) rotate(-45deg);

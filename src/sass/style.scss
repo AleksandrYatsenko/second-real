@@ -114,6 +114,10 @@ ul {
   display: none;
 }
 
+.lock {
+  overflow: hidden;
+}
+
 @import 'blocks/promo';
 @import 'blocks/hands';
 @import 'blocks/selection';
